@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  border-radius: 41px;
+  background-color: #e02c6d;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+}
+
+/* header section styles */
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+header nav .brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-menu .search-icon {
+  display: block;
+}
+
+.nav-menu .cart-icon {
+  width: 26px;
+  display: block;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+header .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.banner .banner-content, .banner .banner-image {
+  flex: 1 1 50%;
+}
+
+.banner .banner-image {
+  background-image: url('./images/Circle\ design.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.banner .banner-image img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 440px;
+}
+
+.banner-content h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  line-height: 1.3;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3a3a3a;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width:576px) {
+
+  /* header section */
+
+  header {
+    height: auto;
+  }
+
+  header nav {
+    padding: 30px 5%;
+  }
+  header nav ul {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  .mobile-icon img {
+    display: block;
+    width: 1.5rem;
+  }
+
+  header nav .brand {
+    font-size: 1rem;
+  }
+
+  header .banner {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .banner .banner-content, .banner .banner-image {
+    flex-basis: 90%;
+  }
+
+  .banner .banner-content {
+    text-align: center;
+  }
+
+  .banner-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .btn-primary {
+    font-weight: 500;
+    margin: 0 auto;
+  }
+}
